@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
+ruby '2.4.2'
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -55,7 +55,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'therubyracer', platforms: :ruby
 gem 'bcrypt', '~> 3.1.7' #パスワードの暗号化
 gem 'nokogiri', '~>1.6.1' #HTML/XML解析・生成
-gem 'rails-18n', '~>4.0.1' #翻訳
+gem 'rails-i18n', '~>4.0.1' #翻訳
 group :test do
   gem 'rspec-rails','~>3.0.0.beta2'
   gem 'spring-commands-rspec', '~>1.0.1'

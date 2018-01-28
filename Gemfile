@@ -39,11 +39,12 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '~> 2.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -57,7 +58,7 @@ gem 'bcrypt', '~> 3.1.7' #パスワードの暗号化
 gem 'nokogiri', '~>1.6.1' #HTML/XML解析・生成
 gem 'rails-i18n', '~>4.0.1' #翻訳
 group :test do
-  gem 'rspec-rails','~>3.0.0.beta2'
+  gem 'rspec-rails'
   gem 'spring-commands-rspec', '~>1.0.1'
   gem 'factory_girl_rails', '~> 4.4.1'
   gem 'database_cleaner', '~> 1.2.0'
